@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Drop-down Menu</title>
+    <link rel="stylesheet" href="verticaltabs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="verticaltabs.js"></script>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="contentList">
+            <ul class="menu">
+                <li class="module_li">
+                    <label for="btn-1" class="first">Module 1
+                        <span id="ownArrow1" class="module fas fa-caret-down"
+                            onclick="showSubtopic(event,'module1_ul')"></span>
+                    </label>
+                    <ul id="module1_ul">
+                        <li><a class="subtopic" onclick="showContent(event,'m1_subtopic1')">subtopic 1</a></li>
+                        <li><a class="subtopic" onclick="showContent(event,'m1_subtopic2')">subtopic 2</a></li>
+                        <li><a class="subtopic" onclick="showContent(event,'m1_subtopic3')">subtopic 3</a></li>
+                    </ul>
+                </li>
+                <li class="module_li">
+                    <label for="btn-2" class="second"> Module 2
+                        <span class="module fas fa-caret-down" onclick="showSubtopic(event,'module2_ul')"></span>
+                    </label>
+
+                    <ul id="module2_ul">
+                        <li><a class="subtopic" onclick="showContent(event,'m2_subtopic1')">subtopic 1</a></li>
+                        <li><a class="subtopic" onclick="showContent(event,'m2_subtopic2')">subtopic 2</a></li>
+                    </ul>
+                </li>
+                <li class="module_li">
+                    <label for="btn-3" class="second"> Module 3
+                        <span class="module fas fa-caret-down" onclick="showSubtopic(event,'module3_ul')"></span>
+                    </label>
+
+                    <ul id="module3_ul">
+                        <li><a class="subtopic" onclick="showContent(event,'m3_subtopic1')">subtopic 1</a></li>
+                        <li><a class="subtopic" onclick="showContent(event,'m3_subtopic2')">subtopic 2</a></li>
+                    </ul>
+
+                </li>
+                <li class="module_li"><a href="#">Module 4</a></li>
+                <li class="module_li"><a href="#">Module 5</a></li>
+                <li class="module_li"><a href="#">Module 6</a></li>
+                <li class="module_li"><a href="#">Module 7</a></li>
+                <li class="module_li"><a href="#">Module 8</a></li>
+                <li class="module_li"><a href="#">Module 9</a></li>
+                <li class="module_li"><a href="#">Module 10</a></li>
+                <li class="module_li"><a href="#">Module 11</a></li>
+                <li class="module_li"><a href="#">Module 12</a></li>
+                <li class="module_li"><a href="#">Module 13</a></li>
+                <li class="module_li"><a href="#">Module 14</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div id="m1_subtopic1" class="content_tab">
+                <h2>Subtopic 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum harum illum doloremque ducimus, itaque
+                    sed rerum explicabo. Suscipit neque ex nihil quia corrupti voluptates, numquam voluptatem sint nulla
+                    itaque quidem!</p>
+
+                <video controls controlsList="nodownload">
+                    <source src="./media/102.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div id="m1_subtopic2" class="content_tab">
+                <h2>Subtopic 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum harum illum doloremque ducimus, itaque
+                    sed rerum explicabo. Suscipit neque ex nihil quia corrupti voluptates, numquam voluptatem sint nulla
+                    itaque quidem!</p>
+                <iframe src="./media/1.pdf#toolbar=0"></iframe>
+            </div>
+            <div id="m1_subtopic3" class="content_tab">
+                <h2>Subtopic 3</h2>
+                <p>ipsum dolor sit amet consectetur adipisicing elit. Ipsum harum illum doloremque ducimus, itaque sed
+                    rerum explicabo. Suscipit neque ex nihil quia corrupti voluptates, numquam voluptatem sint nulla
+                    itaque quidem!</p>
+                <div class="assignment">
+                    <p class="assignmentNo">Assignment-1</p>
+                    <p class="dDateField">Due Date:</p>
+                    <p>chemical substance is a form of matter having constant chemical composition and characteristic
+                        properties.</p>
+                    <div class="asgnBtn">
+                        <button class="dnldButton">Download</button>
+                        <button class="upldButton">Upload</button>
+                    </div>
+
+                </div>
+                <div class="assignment">
+                    <p class="assignmentNo">Assignment-2</p>
+                    <p class="dDateField">Due Date:</p>
+                    <p>chemical substance is a form of matter having constant chemical composition and characteristic
+                        properties.</p>
+                    <div class="asgnBtn">
+                        <button class="dnldButton">Download</button>
+                        <button class="upldButton">Upload</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="m2_subtopic1" class="content_tab">
+                <h2>Subtopic 1 of module 2</h2>
+                <p>ipsum dolor sit amet consectetur adipisicing elit. Ipsum harum illum doloremque ducimus, itaque sed
+                    rerum explicabo. Suscipit neque ex nihil quia corrupti voluptates, numquam voluptatem sint nulla
+                    itaque quidem!</p>
+            </div>
+            <div id="m2_subtopic2" class="content_tab">
+                <h2>Subtopic 2 of module 2</h2>
+                <p>ipsum dolor sit amet consectetur adipisicing elit. Ipsum harum illum doloremque ducimus, itaque sed
+                    rerum explicabo. Suscipit neque ex nihil quia corrupti voluptates, numquam voluptatem sint nulla
+                    itaque quidem!</p>
+            </div>
+
+            <div id="m3_subtopic1" class="content_tab">
+                <h2>Subtopic 1 of module 3</h2>
+                <p>ipsum dolor sit amet consectetur adipisicing elit. Ipsum harum illum doloremque ducimus, itaque sed
+                    rerum explicabo. Suscipit neque ex nihil quia corrupti voluptates, numquam voluptatem sint nulla
+                    itaque quidem!</p>
+            </div>
+            <div id="m3_subtopic2" class="content_tab">
+                <h2>Subtopic 2 of module 3</h2>
+                <p>ipsum dolor sit amet consectetur adipisicing elit. Ipsum harum illum doloremque ducimus, itaque sed
+                    rerum explicabo. Suscipit neque ex nihil quia corrupti voluptates, numquam voluptatem sint nulla
+                    itaque quidem!</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
